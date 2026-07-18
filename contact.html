@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Register — Al-Bawaba | Meknes eFootball</title>
+  <meta name="description" content="Register for the next eFootball bracket or get in touch with Al-Bawaba. Contact us via email, phone, or WhatsApp.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.jpg" alt="Al-Bawaba Logo" width="40" height="40">
+        <span class="navbar__logo-text">Al-<span>Bawaba</span></span>
+      </a>
+
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+
+      <button class="navbar__hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <!-- ===== LIVE CLOCK ===== -->
+  <div class="live-clock">
+    <div class="live-clock__dot"></div>
+    <span>LIVE</span>
+    <span class="live-clock__time">--:--:-- — Morocco</span>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section__label fade-in">Get in Touch</span>
+      <h1 class="page-hero__title fade-in fade-in-delay-1">Register or<br>Contact Us.</h1>
+      <p class="page-hero__desc fade-in fade-in-delay-2">
+        Ready to compete? Fill out the form or reach out directly. We respond fast.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact__layout">
+
+        <!-- Left: Contact Form -->
+        <div>
+          <div class="fade-in">
+            <span class="section__label">Registration</span>
+            <h2 class="section__title" style="font-size: clamp(1.5rem, 4vw, 2rem);">Fill Out the Form</h2>
+          </div>
+
+          <form class="contact-form fade-in fade-in-delay-1" id="contactForm" style="margin-top: var(--space-xl);">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+212 6XX XXX XXX">
+            </div>
+
+            <div class="form-group">
+              <label for="bracket">Preferred Bracket Tier</label>
+              <select id="bracket" name="bracket">
+                <option value="" disabled selected>Select a tier</option>
+                <option value="bronze">Bronze — Beginners Welcome</option>
+                <option value="silver">Silver — Intermediate</option>
+                <option value="gold">Gold — Competitive</option>
+                <option value="any">Any Available Bracket</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="message" placeholder="Anything you'd like us to know..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Submit Registration
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3 class="form-success__title">Thank You!</h3>
+            <p class="form-success__desc">
+              Your registration has been received. We'll get back to you shortly with bracket details and next steps. Check your email for confirmation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="contact-info">
+          <div class="fade-in">
+            <span class="section__label">Direct Contact</span>
+            <h2 class="section__title" style="font-size: clamp(1.5rem, 4vw, 2rem);">Reach Us Directly</h2>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-info__item fade-in fade-in-delay-1">
+            <div class="contact-info__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">Email</div>
+              <div class="contact-info__value">
+                <a href="mailto:y.elmoudni225@gmail.com">y.elmoudni225@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-info__item fade-in fade-in-delay-2">
+            <div class="contact-info__icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">Phone / WhatsApp</div>
+              <div class="contact-info__value">
+                <a href="tel:+212611203071">+212 611 203 071</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timezone -->
+          <div class="contact-info__item fade-in fade-in-delay-3">
+            <div class="contact-info__icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <div class="contact-info__label">Timezone</div>
+              <div class="contact-info__value">
+                UTC+1 (Morocco)
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Register via WhatsApp -->
+          <div class="quick-register fade-in fade-in-delay-4">
+            <h3 class="quick-register__title">Quick Register via WhatsApp</h3>
+            <p class="quick-register__desc">
+              Skip the form and message us directly. Tap the button below to open WhatsApp with a pre-filled message.
+            </p>
+            <a href="https://wa.me/212611203071?text=Hi%20Al-Bawaba%2C%20I%20want%20to%20join%20the%20next%20bracket!" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--full">
+              <i class="fab fa-whatsapp"></i>
+              Quick Register on WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">
+          <img src="images/logo.jpg" alt="Al-Bawaba" width="32" height="32">
+          <span class="footer__logo-text">Al-<span>Bawaba</span></span>
+        </a>
+
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <span class="footer__divider"></span>
+
+        <p class="footer__copy">&copy; 2025 Al-Bawaba. All rights reserved. Meknes, Morocco.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.js" defer></script>
+  <script src="js/style.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Bawaba — The Gateway to Competition | Meknes</title>
+  <meta name="description" content="Al-Bawaba organizes fair, competitive eFootball tournaments in Meknes, Morocco. Join the next bracket and compete.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon (logo) -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.jpg" alt="Al-Bawaba Logo" width="40" height="40">
+        <span class="navbar__logo-text">Al-<span>Bawaba</span></span>
+      </a>
+
+      <div class="navbar__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <button class="navbar__hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== LIVE CLOCK ===== -->
+  <div class="live-clock">
+    <div class="live-clock__dot"></div>
+    <span>LIVE</span>
+    <span class="live-clock__time">--:--:-- — Morocco</span>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <!-- Geometric Moroccan Arch (Bab Mansour inspired) -->
+    <div class="hero__arch" aria-hidden="true">
+      <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer horseshoe arch -->
+        <path d="M300 30 C480 30 580 180 580 350 L580 570 L20 570 L20 350 C20 180 120 30 300 30Z"
+              stroke="#D4AF37" stroke-width="2" fill="none"/>
+        <!-- Inner arch -->
+        <path d="M300 80 C440 80 530 200 530 350 L530 570 L70 570 L70 350 C70 200 160 80 300 80Z"
+              stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.5"/>
+        <!-- Keystone decoration -->
+        <path d="M270 30 L300 10 L330 30" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+        <!-- Decorative muqarnas lines (simplified) -->
+        <line x1="150" y1="300" x2="450" y2="300" stroke="#D4AF37" stroke-width="0.5" opacity="0.3"/>
+        <line x1="100" y1="400" x2="500" y2="400" stroke="#D4AF37" stroke-width="0.5" opacity="0.3"/>
+        <line x1="50" y1="500" x2="550" y2="500" stroke="#D4AF37" stroke-width="0.5" opacity="0.3"/>
+        <!-- Vertical side pillars -->
+        <line x1="300" y1="10" x2="300" y2="570" stroke="#D4AF37" stroke-width="0.5" opacity="0.2"/>
+        <!-- Small geometric rosette at center -->
+        <circle cx="300" cy="290" r="40" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.4"/>
+        <circle cx="300" cy="290" r="25" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.3"/>
+        <circle cx="300" cy="290" r="10" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.5"/>
+        <!-- Corner ornaments -->
+        <rect x="40" y="340" width="30" height="30" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.2" transform="rotate(45 55 355)"/>
+        <rect x="530" y="340" width="30" height="30" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.2" transform="rotate(45 545 355)"/>
+      </svg>
+    </div>
+
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <i class="fas fa-trophy"></i>
+        eFootball Tournaments — Meknes
+      </div>
+
+      <h1 class="hero__title">
+        The <em>Gateway</em><br>to Competition.
+      </h1>
+
+      <p class="hero__tagline">
+        Fair brackets. Real prizes. The bridge between online gaming and the Meknes community.
+      </p>
+
+      <div class="hero__cta">
+        <a href="contact.html" class="btn btn--primary btn--lg">
+          Join the Next Bracket
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WEEKLY SCHEDULE ===== -->
+  <section class="section schedule" id="schedule">
+    <div class="container">
+      <div class="fade-in">
+        <span class="section__label">Weekly Brackets</span>
+        <h2 class="section__title">This Week's Schedule</h2>
+        <p class="section__subtitle">
+          Two competitive brackets run every weekday. Register early to secure your spot.
+        </p>
+      </div>
+
+      <div class="schedule__grid">
+        <!-- Monday -->
+        <div class="schedule__card fade-in fade-in-delay-1">
+          <span class="schedule__day">Monday</span>
+          <div class="schedule__detail">
+            <span class="schedule__bracket-name">Bracket A — Afternoon</span>
+            <span class="schedule__bracket-time">2 Brackets · Opens 14:00</span>
+          </div>
+          <span class="schedule__status">Open</span>
+        </div>
+        <!-- Tuesday -->
+        <div class="schedule__card fade-in fade-in-delay-2">
+          <span class="schedule__day">Tuesday</span>
+          <div class="schedule__detail">
+            <span class="schedule__bracket-name">Bracket B — Afternoon</span>
+            <span class="schedule__bracket-time">2 Brackets · Opens 14:00</span>
+          </div>
+          <span class="schedule__status">Open</span>
+        </div>
+        <!-- Wednesday -->
+        <div class="schedule__card fade-in fade-in-delay-1">
+          <span class="schedule__day">Wednesday</span>
+          <div class="schedule__detail">
+            <span class="schedule__bracket-name">Bracket C — Afternoon</span>
+            <span class="schedule__bracket-time">2 Brackets · Opens 14:00</span>
+          </div>
+          <span class="schedule__status">Open</span>
+        </div>
+        <!-- Thursday -->
+        <div class="schedule__card fade-in fade-in-delay-2">
+          <span class="schedule__day">Thursday</span>
+          <div class="schedule__detail">
+            <span class="schedule__bracket-name">Bracket D — Afternoon</span>
+            <span class="schedule__bracket-time">2 Brackets · Opens 14:00</span>
+          </div>
+          <span class="schedule__status">Open</span>
+        </div>
+        <!-- Friday -->
+        <div class="schedule__card fade-in fade-in-delay-1">
+          <span class="schedule__day">Friday</span>
+          <div class="schedule__detail">
+            <span class="schedule__bracket-name">Bracket E — Weekend Kickoff</span>
+            <span class="schedule__bracket-time">2 Brackets · Opens 14:00</span>
+          </div>
+          <span class="schedule__status">Open</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIVIDER ===== -->
+  <div class="divider" aria-hidden="true">
+    <span class="divider__line"></span>
+    <span class="divider__diamond"></span>
+    <span class="divider__line"></span>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">
+          <img src="images/logo.jpg" alt="Al-Bawaba" width="32" height="32">
+          <span class="footer__logo-text">Al-<span>Bawaba</span></span>
+        </a>
+
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <span class="footer__divider"></span>
+
+        <p class="footer__copy">&copy; 2025 Al-Bawaba. All rights reserved. Meknes, Morocco.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FontAwesome (free CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.js" defer></script>
+
+  <!-- Main Script -->
+  <script src="js/style.js"></script>
+
+</body>
+</html>
